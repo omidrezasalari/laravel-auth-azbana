@@ -1,0 +1,34 @@
+{
+    "name": "omidsalari/laravel-auth-azbana",
+    "description": "this package is basic authentication",
+    "keywords": [
+        "laravel",
+        "laravel-package"
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "OmidReza Salari",
+            "email": "omidsalari995@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Authenticate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "AuthenticateTest\\": "tests/"
+    },
+    "require": {
+        "omidsalari/smart-facades": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Authenticate\\Providers\\AuthServiceProvider"
+            ]
+        }
+    }
+}
